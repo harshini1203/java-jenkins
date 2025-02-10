@@ -35,7 +35,7 @@ pipeline {
             echo 'Build successful! Timestamp printed.'
         }
         failure {
-            echo 'Build failed! Check errors.'
+            echo 'Build failed! Check for errors.'
         }
     }
 }
