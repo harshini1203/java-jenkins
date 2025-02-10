@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        JAVA_HOME = tool 'JDK'  // Ensure Jenkins has JDK configured
+        JAVA_HOME = tool 'jdk-17'  // Ensure Jenkins has JDK configured
         PATH = "${JAVA_HOME}/bin:${env.PATH}"
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-username/your-repo.git'
+                git branch: 'main', url: 'https://github.com/harshini1203/java-jenkins.git'
             }
         }
 
